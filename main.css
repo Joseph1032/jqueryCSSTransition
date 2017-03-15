@@ -1,0 +1,40 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+#panels {
+	border:1px solid;
+	border-color: rgb(0,180,195);
+	width:500px;
+	margin:auto;
+}
+button.accordion {
+	background-color:rgb(0,198,214);
+	padding:15px;
+	width:500px;
+	cursor:pointer;
+	text-align: left;
+	color:white;
+	font-size: 18px;
+}
+button.accordion:hover{
+	background-color:rgb(0,216,238);
+}
+p {
+	padding:15px;
+	font-family: arial;
+	font-size: 15px;
+	color: rgb(111,109,118);
+}
+.section {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+	overflow: auto;
+}
+.show {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 400px;
+	transition: max-height 2s ease-out;
+}
